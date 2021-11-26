@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    padding: 0;
+    margin:0;
+    font-weight:400 ;
+}
+
+/* navbar */
+header{
+    display: flex;
+    height: 90px;
+    margin:0;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+#header-img{
+    height:80%;
+    width:auto;
+    margin-left: 4vw;
+    position: sticky;
+    
+}
+
+#navbar{
+    margin-right: 5vw;
+    position: inherit;
+}
+#navbar ul{
+     display: flex;
+     list-style-type: none;
+     list-style-type: none;
+     font-weight: 1.2em;
+ }
+ #navbar li{
+     margin: 2vw;
+ }
+ #navbar a{
+     color: white;
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 1.2em;
+ }
+ /* hover stuff */
+
+ /* Landing */
+
+ #landing{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height:100vh;
+     margin-top:-90px;
+     /* background */
+     background-image: url("imgs/cookies1.png");
+     background-position: center;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-size: cover; 
+        }
+        h1{
+            font-size: 4em;
+            font-weight: 800;
+            margin: 0;
+            color:#d8262f;
+            text-align: center;
+        }
+        #landing p{
+            color: white;
+        }
+
+        #orderlink{
+            text-decoration: none;
+            font-weight: 600;
+            color: black;
+            background-color: white;
+            margin-top: 2%;
+            padding: 20px;
+            size: 1.6em;
+        }
+        #arrow{
+            margin-top: 80vh;
+            color:white;
+            position: absolute;
+        }
+
+        #landing span {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            margin-left: -12px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+        }
+
+  h2{
+      font-weight: 700;
+      font-size: 2.5em;
+      color: #d8262f;
+  }
+
+  #cookies{
+      padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8vh;
+            }
+            .cookie-items{
+                width: 80%;
+                display: flex;;
+                justify-content: center;
+                margin: 40px;
+            }
+            .cookie-info{
+                width:60%;
+                margin-left: 1.5vw;
+                border: blueviolet  solid;
+            }
+            .cookie-info h3{
+                color: #d8262f;
+                font-size: 1.2em;
+                
+            }
+            .cookie-info p{
+                font-size: 1.1em;
+            }
+            #cookies img{
+                
+                border: #26d83e solid;
+            }
+
+  /* flavors div */
+#flavors{
+    padding-top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #d8262f;
+}
+    #flavors h2{
+        color:white;
+    }
+    #flavor-gallery{
+
+       margin: 0 10vw;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center ;
+       gap: 10 px;
+
+    }
+    .cookie-flavor{
+        width:250px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start ;
+
+        margin-bottom: 50px;
+        font-size: 1em;
+        text-align:center;
+        
+    }
+    
+    .flavor-img{
+        width:100%;
+    }
+    .flavor-label{
+        width:90%;
+    }
+
+#video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2vw 0;
+}
+
+    iframe{
+        width:800px;
+        height:500px;
+    }
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20%;
+    background-color: #d8262f;
+    color: white;
+    padding-bottom: 50px;
+}
+        #contact h2{
+            color: white;
+        }
+
+        form{
+            width:50%;
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea{
+            margin-bottom: 20px;
+            border-style: none;
+
+            min-height: 30px;
+            font-family: sans-serif;
+            padding-left:10px;
+        }
+        textarea{
+            padding-top: 10px;
+        }
+
+        button{
+            margin-top: 20px;
+            width: 100px;
+            height: 50px;
+            font-size: 1em;
+            align-self: center;
+            border: none;
+            border-style: none;
+            font-family: 'Montserrat', sans-serif;
+            background-color: black;
+            color: white;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+
+#find{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 40px;
+}
+#find h3{
+    font-size: 2em;
+}
+#find img{
+    width:40px;
+    margin: 0 10px;
+}
+#find img:hover{
+    filter: brightness(0);
+}
+
+footer{
+    align-self: center;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: #d8262f;
+    padding:10px;
+    color: white;
+}
+footer a {
+    color: bisque;
+}
+
+
+/* Media Queries */
+@media  (max-width: 950px){
+    body{
+        background-color: aqua;
+    }
+    .cookie-flavor{
+        width: 150px;
+    }
+    form{
+        width:90%;
+    }
+}
+
+@media  (max-width: 820px){
+    body{
+        background-color: greenyellow;
+    }
+    iframe{
+        width:560px;
+        height:350px;
+    }
+    #video h2{
+        font-size: 2em;
+    }
+}
+
+@media  (max-width: 590px){
+    body{
+        background-color: yellow;
+    }
+    #landing h1{
+        font-size: 3em;
+    }
+    #video h2{
+        font-size: 1.5em;
+    }   
+    h2{
+        font-size:1.5em;
+    }
+     iframe{
+        width:400px;
+        height:250px;
+    }
+    .cookie-flavor{
+        width: 89px;
+    }
+    .flavor-label{
+        font-size: 0.6em;
+    }
+    .cookie-items{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        text-align: center;
+    }
+    .cookie-info{
+        width:80%;
+    }
+    #landing p{
+        text-align: center;
+        color: white;
+    }
+}
+@media  (max-width: 440px){
+    body{
+        background-color: greenyellow;
+    }
+    iframe{
+        width:266px;
+        height:166px;
+    }
+
+    #video h2{
+        font-size: 2em;
+    }
+    #navbar a{
+        font-size: 1em;
+    }
+}
