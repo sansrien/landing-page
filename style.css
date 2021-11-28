@@ -19,6 +19,7 @@ header{
     position: sticky;
     top: 0px;
     z-index: 100;
+    transition: 0.3s ease-in-out;
 }
 
 #header-img{
@@ -47,6 +48,15 @@ header{
      text-decoration: none;
      font-weight: 500;
      font-size: 1.2em;
+ }
+ #navbar a:hover{
+    border-bottom: white 5px solid;
+}
+ .nav-active{
+     background-color: #d8262f;
+ }
+ .img-active{
+     filter: brightness(100);
  }
  /* hover stuff */
 
@@ -87,8 +97,13 @@ header{
             padding: 20px;
             size: 1.6em;
         }
+        #orderlink:hover{
+            background-color: #d8262f;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        }
         #arrow{
-            margin-top: 80vh;
+            margin-top: 75vh;
             color:white;
             position: absolute;
         }
@@ -109,6 +124,7 @@ header{
       font-weight: 700;
       font-size: 2.5em;
       color: #d8262f;
+      text-align: center;
   }
 
   #cookies{
@@ -128,7 +144,7 @@ header{
             .cookie-info{
                 width:60%;
                 margin-left: 1.5vw;
-                border: blueviolet  solid;
+
             }
             .cookie-info h3{
                 color: #d8262f;
@@ -138,10 +154,7 @@ header{
             .cookie-info p{
                 font-size: 1.1em;
             }
-            #cookies img{
-                
-                border: #26d83e solid;
-            }
+
 
   /* flavors div */
 #flavors{
@@ -157,8 +170,7 @@ header{
         color:white;
     }
     #flavor-gallery{
-
-       margin: 0 10vw;
+       margin: 0 8vw;
        display: flex;
        flex-wrap: wrap;
        justify-content: center ;
@@ -166,7 +178,7 @@ header{
 
     }
     .cookie-flavor{
-        width:250px;
+        width:230px;
         display: flex;
         flex-direction: column;
         justify-content:flex-start ;
@@ -180,6 +192,24 @@ header{
     .flavor-img{
         width:100%;
     }
+    .flavor-img:hover{
+        cursor: pointer;
+        animation-duration: 500ms;
+        animation-name: rotate;
+        animation-fill-mode: forwards;
+/*         
+        animation: 100ms linear 0s normal none 1 running rotate; */
+    }
+    
+    @keyframes rotate {
+        from{
+          transform: rotateZ(0);
+        }
+        to{
+          transform: rotateZ(90deg);
+        }
+      }
+      
     .flavor-label{
         width:90%;
     }
@@ -200,7 +230,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 20%;
+    padding: 10px 5%;
     background-color: #d8262f;
     color: white;
     padding-bottom: 50px;
@@ -240,7 +270,11 @@ header{
         }
         button:hover{
             cursor: pointer;
+            background-color: white;
+            color: red;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
         }
+       
 
 #find{
     display: flex;
@@ -275,9 +309,7 @@ footer a {
 
 /* Media Queries */
 @media  (max-width: 950px){
-    body{
-        background-color: aqua;
-    }
+
     .cookie-flavor{
         width: 150px;
     }
@@ -287,9 +319,7 @@ footer a {
 }
 
 @media  (max-width: 820px){
-    body{
-        background-color: greenyellow;
-    }
+
     iframe{
         width:560px;
         height:350px;
@@ -300,9 +330,7 @@ footer a {
 }
 
 @media  (max-width: 590px){
-    body{
-        background-color: yellow;
-    }
+
     #landing h1{
         font-size: 3em;
     }
@@ -339,9 +367,7 @@ footer a {
     }
 }
 @media  (max-width: 440px){
-    body{
-        background-color: greenyellow;
-    }
+
     iframe{
         width:266px;
         height:166px;
